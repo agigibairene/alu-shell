@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Write a Bash script that displays Best School 10 times using until loop
-i= 1;
+i=1;
 until [ $i -ge 11 ]; do
-   echo "Best School"
+   echo "Best School";
    ((i++));
 done
