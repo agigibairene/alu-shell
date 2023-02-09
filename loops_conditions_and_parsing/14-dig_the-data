@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-#Now that you’ve parsed the Apache log file, let’s sort the data so you can get a better idea of what is going on.
-awk '{ print $1, $9 }' apache-access.log | sort | uniq -c | sort -nr
+# Bash script that groups visitors by IP and HTTP status code, and displays this data
+
+awk '{ print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
