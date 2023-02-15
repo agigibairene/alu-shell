@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #Write a manage_my_process Bash script that
-
 if [ "$1" = start ]
 then
 	sudo -b ./manage_my_process
